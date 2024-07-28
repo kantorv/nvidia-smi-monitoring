@@ -1,6 +1,9 @@
 
 #### Single host GPU monitoring stack, driven by docker-compose.
 
+### API endpoints
+![image description](assets/nvidia-smi-monitoring-scheme.drawio.png)
+
 ##### components 
 * nvivia-smi
 * grafana
