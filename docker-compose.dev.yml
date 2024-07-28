@@ -1,0 +1,27 @@
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    volumes:
+      - ./provisioning:/etc/grafana/provisioning
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=asdasd123
+
+
+
+  prometheus-nvidiasmi:
+    image: e7db/prometheus-nvidiasmi:cuda12
+    privileged: true
+    runtime: nvidia
+    ports:
+      - "9202:9202/tcp"

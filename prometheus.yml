@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 1s # Set the scrape interval as needed
+
+scrape_configs:
+  - job_name: 'prometheus-nvidiasmi'
+    static_configs:
+      - targets: ['prometheus-nvidiasmi:9202']
