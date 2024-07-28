@@ -1,23 +1,21 @@
 
 #### Single host GPU monitoring stack, driven by docker-compose.
-
-### API endpoints
 ![image description](assets/nvidia-smi-monitoring-scheme.drawio.png)
 
-##### components 
+#### components 
 * nvivia-smi
 * grafana
 * prometheus
 * prometheus-nvivia-smi metrics expotrer
 
 
-##### prequirements
+#### prequirements
 * CUDA 11.X/12.X
 * [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
 
 
-##### manage containers
+#### manage containers
 
 ```bash
 # start
