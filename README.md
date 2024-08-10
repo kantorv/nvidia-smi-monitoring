@@ -3,7 +3,7 @@
 ![image description](assets/nvidia-smi-monitoring-scheme.drawio.png)
 
 #### components 
-* nvivia-smi
+* nvidia-smi
 * grafana
 * prometheus
 * prometheus-nvivia-smi metrics expotrer
